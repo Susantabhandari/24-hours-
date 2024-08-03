@@ -4,10 +4,10 @@
   <a href="https://www.python.org">
     <img src="http://ForTheBadge.com/images/badges/made-with-python.svg" width ="250">
   </a>
-  <a href="https://t.me/neprosz">
+  <a href="https://t.me/+aRjpaSweFwQyMWRl">
     <img src="https://github.com/CodeXBotz/PyrogramGenStr/blob/main/resources/madebycodex-badge.svg" width="250">
   </a><br>
-  <a href="https://t.me/+aRjpaSweFwQyMWRl">
+  <a href="https://t.me/neprosz">
     &nbsp;<img src="https://img.shields.io/badge/Code%20%F0%9D%95%8F%20Botz-Channel-blue?style=flat-square&logo=telegram" width="130" height="18">&nbsp;
   </a>
   <a href="https://t.me/waspros">
@@ -147,7 +147,7 @@ Report Bugs, Give Feature Requests There..
 ### Licence
 [![GNU GPLv3 Image](https://www.gnu.org/graphics/gplv3-127x51.png)](http://www.gnu.org/licenses/gpl-3.0.en.html)  
 
-[FILE-SHARING-BOT](https://github.com/Susantabhandari/File-Sharing-Bot/) is Free Software: You can use, study share and improve it at your
+[FILE-SHARING-BOT](https://github.com/Susantabhandari/24-hours-/) is Free Software: You can use, study share and improve it at your
 will. Specifically you can redistribute and/or modify it under the terms of the
 [GNU General Public License](https://www.gnu.org/licenses/gpl.html) as
 published by the Free Software Foundation, either version 3 of the License, or
