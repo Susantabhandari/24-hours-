@@ -10,7 +10,7 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "666796479:AAF3XaDHNShtq1ZVEvTIWYb_muORKDlaJO0")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6667796479:AAF3XaDHNShtq1ZVEvTIWYb_muORKDlaJO0")
 
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "2101705"))
@@ -31,8 +31,8 @@ PORT = os.environ.get("PORT", "8080")
 DB_URI = "mongodb+srv://myth:myth@susan.di1l8.mongodb.net/?retryWrites=true&w=majority&appName=Susan"
 DB_NAME = os.environ.get("DATABASE_NAME", "filesharexbot")
 
-SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "shortyfi.link")
-SHORTLINK_API = os.environ.get("SHORTLINK_API", "6ea45e31941204014975566c1a788f0492935434")
+SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "publicearn.com")
+SHORTLINK_API = os.environ.get("SHORTLINK_API", "2c008db52de415a6970d0f7cf902897865796ce8")
 VERIFY_EXPIRE = int(os.environ.get('VERIFY_EXPIRE', 86400))  # Add time in seconds
 IS_VERIFY = os.environ.get("IS_VERIFY", "True")
 TUT_VID = os.environ.get("TUT_VID", "neprosz/3")
@@ -47,7 +47,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link.")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "2114237158").split()):
+    for x in (os.environ.get("ADMINS", "2114237158 6128266949").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
@@ -59,7 +59,7 @@ FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hello {first}\n\n<b>You need to
 CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "This video/Photo/anything is available on the internet. We LeakHubd or its subsidiary channel doesn't produce any of them.")
 
 #set True if you want to prevent users from forwarding files from bot
-PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" else False
+PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "True") == "True" else False
 
 #Set true if you want Disable your Channel Posts Share button
 DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'True'
