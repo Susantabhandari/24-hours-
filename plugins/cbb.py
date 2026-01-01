@@ -25,4 +25,4 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         try:
             await query.message.reply_to_message.delete()
         except:
-            pas
+            pass

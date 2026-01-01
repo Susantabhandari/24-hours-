@@ -38,7 +38,7 @@ async def start_command(client: Client, message: Message):
     owner_id = ADMINS  # Fetch the owner's ID from config
 
     # Check if the user is the owner
-    if id == owner_id:
+    if id in owner_id:
         # Owner-specific actions
         # You can add any additional actions specific to the owner here
         await message.reply("You are the owner! Additional actions can be added here.")
@@ -59,6 +59,7 @@ async def start_command(client: Client, message: Message):
             if verify_status['verify_token'] != token:
                 return await message.reply("Your token is invalid or Expired. Try again by clicking /start")
             await update_verify_status(id, is_verified=True, verified_time=time.time())
+            reply_markup = None
             if verify_status["link"] == "":
                 reply_markup = None
             await message.reply(f"Your token successfully verified and valid for: 24 Hour", reply_markup=reply_markup, protect_content=False, quote=True)
