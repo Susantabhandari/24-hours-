@@ -35,10 +35,14 @@ from shortzy import Shortzy
 @Bot.on_message(filters.command('start') & filters.private & subscribed)
 async def start_command(client: Client, message: Message):
     id = message.from_user.id
-    owner_id = ADMINS  # Fetch the owner's ID from config
 
     # Check if the user is the owner
-    if id in owner_id:
+# Check if the user is the owner
+
+if id == OWNER_ID:
+
+    pass
+        main
         # Owner-specific actions
         # You can add any additional actions specific to the owner here
         await message.reply("You are the owner! Additional actions can be added here.")
