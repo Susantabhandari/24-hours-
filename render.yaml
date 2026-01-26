@@ -1,0 +1,50 @@
+services:
+  - type: web
+    name: file-sharing-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python3 main.py
+    plan: free
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: TG_BOT_TOKEN
+        sync: false
+      - key: APP_ID
+        sync: false
+      - key: API_HASH
+        sync: false
+      - key: CHANNEL_ID
+        sync: false
+      - key: OWNER_ID
+        sync: false
+      - key: DATABASE_URL
+        sync: false
+      - key: DATABASE_NAME
+        value: filesharexbot
+      - key: SHORTLINK_URL
+        value: publicearn.com
+      - key: SHORTLINK_API
+        sync: false
+      - key: VERIFY_EXPIRE
+        value: "86400"
+      - key: IS_VERIFY
+        value: "True"
+      - key: TUT_VID
+        value: neprosz/3
+      - key: FORCE_SUB_CHANNEL
+        value: "0"
+      - key: TG_BOT_WORKERS
+        value: "4"
+      - key: START_MESSAGE
+        value: "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link."
+      - key: ADMINS
+        sync: false
+      - key: FORCE_SUB_MESSAGE
+        value: "Hello {first}\n\n<b>You need to join in my Channel/Group to use me\n\nKindly Please join Channel</b>"
+      - key: CUSTOM_CAPTION
+        value: "This video/Photo/anything is available on the internet. We LeakHubd or its subsidiary channel doesn't produce any of them."
+      - key: PROTECT_CONTENT
+        value: "True"
+      - key: DISABLE_CHANNEL_BUTTON
+        value: "False"
